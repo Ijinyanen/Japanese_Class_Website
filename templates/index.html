@@ -1,41 +1,23 @@
-<!DOCTYPE html>
+﻿{% extends "layout.html" %}
 
-<html lang="en">
-    <head>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
-        <title> Japanese for Beginners</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="right">
-            <img src="Japanese_Flag.jpg" alt="A Japanses Flag" style="width:200px;height:100px;">
-            </div>
-            <center> <font size ="10" color="red"><b>Japanese For Beginners</b></font> </center>
-        </header>
+{% block head %}
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Main</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="The_Language.html">The Language</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="course_structure.html">Course Structure</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Links.html">Links and Downloads</a>
-            </li>
-        </ul>
-    </nav>
-    </body>
-    <P><b>This is a simple test set of pages to host information about the Beginners Japanese classes.</b> </P>
-    <img src="IMG_3924.JPG" alt="Obon Photo" width="1400" height="1">
-</html>
+{% endblock %}
+
+
+{% block content %}
+<h1><b> Purpose</b></h1>
+<div>
+    <p> This site is to be used as a support for the Japanese B classes. The contents are broken up as below.</p>
+    <ul>
+       <li><b>The Language:</b> This page holds a discription of the language.</li>
+        <li><b>Course Structure:</b> This page shows a basic layout of what we will cover over the 15 weeks.</li>
+        <li><b>Resources:</b> This is a storage </li>
+        <li><b>Test:</b> This will allow you to test yourself against the vocabulary for each week, or allow you to upload your own .csv files to create your own tests.</li>
+        <li><b>Charts:</b> You will find the Hiragana and Katakana charts here.</li>
+        <li><b>Kana Test:</b> works like test, but for Katakana. You should be able to select the line you want to test. Just like we do in class.</li>
+        <li><b>Kanji Test:</b> as above, but for Kanji</li>
+        <li><b>Links:</b> This page contains links to other sites</li>
+    </ul>
+</div>
+{% endblock %}
